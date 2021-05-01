@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Admin</title>
+ <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="shortcut icon" href="IMAGE/ico.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <style>
+            
+            .container{inline}
+            .tab{float: center;}
+            .tab-2{margin-left: 500px}
+            .tab-2 input{display: block;margin-bottom: 0px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:red,color:blue}
+			th:hover{background-color:brown,color:blue}
+
+        </style>
+</head>
+<body>
+<header >
+<div  style="background-image: url('IMAGE/15.jpg');background-size: 100% 710px; width: 100%; height: 710px">
+	<nav>
+	
+		<div class="logo"><h1 style="margin: 2px auto;padding-top:15px">The Web Store</h1></div>
+		<div class="menu" >
+			<a style="margin-left:950px ;margin-top:1px ;padding:1px margin: 0 auto;" href="index.html" >Home</a>
+			<a style="margin-left:450px " href="login.html">Logout</a>
+
+		</div>
+		</nav>
+        
+          <!-- page content -->
+   
+ <br><br><br><br><br><br><br><br>
+    <h1 class="col-md-12 text-center" style="color: blue">EMPLOYEES</h1>
+    <br><br><br><br>
+    <div class="table-responsive col-md-10"><center>
+<table class="table table-bordered table-striped table-hover table-condensed  text-center" id="DyanmicTable">
+  <thead><center>
+    <tr>
+      <th class="text-center" style="background-color:orange ">
+        Full Name
+      </th>
+      <th class="text-center" style="background-color:orange ">
+        WebSite
+      </th>
+      <th class="text-center" style="background-color:orange ">
+        Contact Number
+      </th>
+      <th class="text-center" style="background-color:orange ">
+        <button id="addNewRow" style="background-color:pink "class="btn btn-primary btn-sm" >Add New Row</button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Muhammad Ali	
+      </td>
+      <td>
+        http://m.com
+      </td>
+      <td>
+        9876543210
+      </td>
+    </tr>
+    <tr>
+      <td >
+       Jahanzaib Ahmed
+      </td>
+      <td >
+        https://jahanzeb.com
+      </td >
+      <td >
+        1234567890
+      </td>
+    </tr>
+    <tr>
+      <td >
+        Akhtar Shah
+      </td>
+      <td>
+        https://shah.com
+      </td>
+      <td>
+        988889888
+      </td>
+    </tr>
+    <tr>
+      <td  ">
+        Wajahat Ali
+      </td>
+      <td >
+        https://wajahat.com
+      </td>
+      <td >
+        9797979797
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <!--JS Files-->
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>
+<script>
+ $('#DyanmicTable').SetEditable({ $addButton: $('#addNewRow')});
+</script>
+  </body>
+</html>
+    </body>
+	</header>
+</html>

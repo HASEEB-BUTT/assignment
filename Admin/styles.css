@@ -1,0 +1,132 @@
+*{
+	 margin: 0;padding: 0;box-sizing: border-box; 
+}
+td {
+ width:26%;
+}
+#new_name{
+margin-left:20px;
+}
+#new_country{
+margin-left:10px;
+}
+#new_age{
+margin-left:30px;
+}
+
+header{
+	width: 100%;height: 100vh;
+ background-size: 100% 710px;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../IMAGE/9.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav{
+	width: 100%;height: 15vh;
+	background: rgba(480,170,190,0.6);
+	color: black;display: flex;justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%;text-align: center;
+	/*background: red;*/
+}
+
+nav .menu{
+	width: 40%;
+	display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; color: b;
+	font-weight: bold;	 
+}
+
+nav .menu a:first-child{
+	color: #e3235d;
+
+}
+
+main{
+	height: 100%;
+	width: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;color: red;
+}
+
+section{
+
+}
+
+section h3{
+	font-size: 35px;font-weight: 200;letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+	margin: 30px; 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+    /*background: #e3235d;*/
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+	background: #e3235d;
+	color: black; 
+}
+
+section .btntwo{
+	background: #e3235d;
+	color: black; 
+}
+
+.btntwo:hover{
+	background: maroon;
+    color: white;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #e3235d;
+}
+
+@keyframes  changetext{
+	0%{content: "Lipstick"}
+	20%{content: "Facepowder"}
+	35%{content: "Lipliner"}
+	60%{content: "Liplose"}
+	80%{content: "Eyeliner"}
+80%{content: "Shoes"}
+}
